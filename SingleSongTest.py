@@ -42,6 +42,7 @@ def main():
     # Load pre-trained model
     minfo = ModelInfo()
     model = minfo.load_model(args.model_path)
+    __import__('ipdb').set_trace()
     minfo.onset_th = minfo.onset_th if args.onset_th is None else args.onset_th
     print(minfo)
 

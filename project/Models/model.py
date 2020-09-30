@@ -1,5 +1,6 @@
 from keras.engine import Input, Model
-from keras.layers import Dense, Reshape, add, TimeDistributed, LSTM, CuDNNLSTM, Dropout, Lambda, concatenate, Multiply
+from keras.layers import Dense, Reshape, add, TimeDistributed, Dropout, Lambda, concatenate, Multiply, LSTM
+from keras.layers import LSTM as CuDNNLSTM
 from keras.layers.core import Activation, Flatten, Dropout
 from keras.layers.normalization import BatchNormalization
 from keras.layers.convolutional import Conv1D, MaxPooling1D, UpSampling2D, UpSampling1D,Conv2D,Conv2DTranspose,MaxPooling2D,Cropping2D
